@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Template • TodoMVC</title>
+		<!-- CSS overrides - remove if you don't need it -->
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script type="module" src="components/new-todo.js"></script>
+		<script type="module" src="components/todo-list.js"></script>
+		<script type="module" src="components/toggle-all.js"></script>
+		<script type="module" src="components/todo-item.js"></script>
+		<script type="module" src="components/todo-count.js"></script>
+	</head>
+	<body>
+		<section class="todoapp">
+			<header>
+				<h1>todos</h1>
+				<div style="display:flex">
+					<toggle-all>
+					</toggle-all>	
+					<new-todo placeholder="What needs to be done?" autofocus></new-todo>
+				</div>
+			</header>
+			<!-- This section should be hidden by default and shown when there are todos -->
+			<section class="main">
+				
+				<todo-list>
+				</todo-list>
+			</section>
+			<!-- This footer should hidden by default and shown when there are todos -->
+			<footer class="footer">
+				<!-- This should be `0 items left` by default -->
+				<todo-count></todo-count>
+				<!-- Remove this if you don't implement routing -->
+				<ul class="filters">
+					<li>
+						<a class="selected" href="#/">All</a>
+					</li>
+					<li>
+						<a href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<!-- Hidden if no completed items are left ↓ -->
+				<button class="clear-completed">Clear completed</button>
+			</footer>
+		</section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<!-- Remove the below line ↓ -->
+			<p>Template by <a href="http://sindresorhus.com">Sindre Sorhus</a></p>
+			<!-- Change this out with your name and url ↓ -->
+			<p>Created by <a href="#">AUTHORS HERE</a></p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+		<script>var process = {env:{NODE_ENV:'production'}}</script>
+		<script type="module" src="./es/app.js"></script>
+
+	</body>
+</html>
