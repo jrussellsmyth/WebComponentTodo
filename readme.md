@@ -25,51 +25,56 @@ The Redux application can respond to these events, as well as update the attribu
 
 ## toggle-all
 
-attributes:
-  checked - set when toggle to "all selected"
-properties
-  checked - true/false
-events:
-  change - fired any time the checked state is toggled.
+__Attributes__
+- checked - set when toggle to "all selected"
+
+__Properties__
+- checked - true/false
+
+__Events__
+- change - fired any time the checked state is toggled.
 
 ## new-todo  (could be more generic - new-text-item)
 A text-input element that will fire a "new item" event with the text entered and clear its content if the enter key is pressed.
 
-Attributes:
-  placeholder: placeholder text for the new-todo text entry box
-  autofocus: if attribute is set text entry box is set to autofocus
-Events:
-  newitem: fired any time a new item is requested
-    - value: text of a new item to be created
+__Attributes__
+- placeholder: placeholder text for the new-todo text entry box
+- autofocus: if attribute is set text entry box is set to autofocus
+__Events__
+- newitem: fired any time a new item is requested
+  - value: text of a new item to be created
 
 ## todo-list - visual list of todos. will render <todo-item> elements for each todo
 Renders a sequence of <todo-item> elements with the content of its "value" property. Should properly dynamically update
 if the property is updated.
 
-Properties:
-    value = the todo list as a js array
+__Properties__
+- value: the todo list as a js array
 
 ## todo-item - displays and edits a single todo
 Displays a single todo item with a checkbox for completed, and a "X" button to delete.
 Double click allows editing value
 When editing, on blur or enter key, emits a "change" event
 On toggle completed will toggle the "complete" attribute and will fire a change event
-events:
-    change - when todo value has been changed
-    delete - when user requests deletion of the todo
-attributes
-    todo-id  - id for the displayed todo
-    complete - boolean that is triggered when the todo item is complete
-    editing  - boolean that is triggered when the todo is being edited
-    value    - the todo text
-properties
-    value - the current todo text
+__Attributes__
+- todo-id:  id for the displayed todo
+- complete: boolean that is triggered when the todo item is complete
+- editing:  boolean that is triggered when the todo is being edited
+- value:    the todo text
+
+__Properties__
+- value - the current todo text
+
+__Events__
+- change - when todo value has been changed
+- delete - when user requests deletion of the todo
 
 ## todo-count - displays the count of todos, with appropriate text item/items with proper english use
-attributes
-    value - count of todos
-properties
-    value - number, count of todos
+__Attributes__
+- value - count of todos
+
+__Properties__
+- value - number, count of todos
 
 # The Routes
 All         "#/"
@@ -78,7 +83,7 @@ Completed   "#/completed"
 
 # Application Behaviour
 - when all tasks are marked completed, set task toggle to checked
--  
+
 
 - Elements should follow best practices documented
 [HERE](https://developers.google.com/web/fundamentals/web-components/best-practices)
