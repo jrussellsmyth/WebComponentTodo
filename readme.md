@@ -40,6 +40,7 @@ A text-input element that will fire a "new item" event with the text entered and
 __Attributes__
 - placeholder: placeholder text for the new-todo text entry box
 - autofocus: if attribute is set text entry box is set to autofocus
+
 __Events__
 - newitem: fired any time a new item is requested
   - value: text of a new item to be created
@@ -56,6 +57,7 @@ Displays a single todo item with a checkbox for completed, and a "X" button to d
 Double click allows editing value
 When editing, on blur or enter key, emits a "change" event
 On toggle completed will toggle the "complete" attribute and will fire a change event
+
 __Attributes__
 - todo-id:  id for the displayed todo
 - complete: boolean that is triggered when the todo item is complete
@@ -86,8 +88,8 @@ __Properties__
 # Application Behaviour
 - when all tasks are marked completed, set task toggle to checked
 
-
-- Elements should follow best practices documented
+# Design and Implementation Details
+Elements should follow best practices documented
 [HERE](https://developers.google.com/web/fundamentals/web-components/best-practices)
 
 
