@@ -77,9 +77,11 @@ __Properties__
 - value - number, count of todos
 
 # The Routes
-All         "#/"
-Active      "#/active"
-Completed   "#/completed"
+|Display|Route|
+|:--|:--|
+|All|        "#/"|
+|Active   |   "#/active"|
+|Completed  | "#/completed"|
 
 # Application Behaviour
 - when all tasks are marked completed, set task toggle to checked
