@@ -6,5 +6,9 @@
 	"appPort": 3000,
 	"extensions": [
 		"dbaeumer.vscode-eslint"
-	]
+	],
+	"runArgs": [
+		"-v","${env:HOME}${env:USERPROFILE}/.npm:/root/.npm",
+		"-v","${env:HOME}${env:USERPROFILE}/.ssh:/root/.ssh"
+	]	
 }
