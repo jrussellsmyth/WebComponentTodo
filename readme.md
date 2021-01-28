@@ -16,6 +16,8 @@ As Web Components does not provide for application state or routing, a small app
   browse to https://localhost:8080/src/index.html
 ```
 
+**Note**: this demonstration requires support for import maps, which at this time includes Chrome and Edge with ``Experimental Web Platform features`` flag enabled
+
 # The Elements
 
 The application is defined as a set of elements with attributes and properties for input, and firing custom events for output.
