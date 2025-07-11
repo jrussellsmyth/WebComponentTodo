@@ -1,4 +1,11 @@
 {
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
-  "features": {}
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
 }
